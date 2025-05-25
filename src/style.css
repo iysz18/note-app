@@ -2,36 +2,50 @@
 :root {
     /* Spacing */
     --grid-container-gap: 50px;
-    --margin-grid-container: 50px;
+    --margin-grid-container: 80px;
+    
+    /* Border */
+    --border-radius-all: 8px;
+
+    /* Coloring */
+    --bg-color-aside: #cccccc;
+    --bg-color-header: #e0e0e0;
+    --bg-color-main: #dddddd;
 }
 
 /* === Grid Container ==== */
 .grid-container {
     display: grid;
-    grid-template-columns: 200px 3fr;
+    grid-template-columns: 250px 3fr;
     grid-template-rows: auto 1fr;
-    height: 100vh;
+    height: calc(100vh - var(--margin-grid-container) * 2);
     gap: var(--grid-container-gap);
     margin: var(--margin-grid-container);
+}
+
+/* Grid Container ---> all children */
+.grid-container * {
+    border-radius: var(--border-radius-all);
 }
 
 /* Grid Container ---> aside settings */
 aside {
     grid-row: 1 / span 2;
-    background-color: #ddd;
+    background-color: var(--bg-color-aside);
     padding: 1rem;
 }
 
 /* Grid Container ---> header settings */
 header {
     grid-column: 2;
-    background-color: #f9f9f9;
+    background-color: var(--bg-color-header);
     padding: 1rem;
+    text-align: center;
 }
 
 /* Grid Container ---> main settings */
 main {
     grid-column: 2;
-    background-color: #eee;
+    background-color: var(--bg-color-main);
     padding: 1rem;
 }
