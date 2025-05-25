@@ -3,12 +3,14 @@
     /* Spacing */
     --grid-container-gap: 50px;
     --margin-grid-container: 80px;
+    --padding-structural-el: 1rem;
+    --border-radius-structure-el: 4px;
     
     /* Border */
     --border-radius-all: 8px;
 
     /* Coloring */
-    --border-color-structure-el: #f7e8d9;
+    --border-color-structure-el: #e7dcd1;
     --bg-color-structure-el: #F4F1EE;
 
     /* Fonts and Sizing */
@@ -28,24 +30,24 @@
 aside, header, main {
     background-color: var(--bg-color-structure-el);
     border-radius: var(--border-radius-all);
-    border: 3px solid var(--border-color-structure-el);
+    border: var(--border-radius-structure-el) solid var(--border-color-structure-el);
 }
 
 /* Grid Container ---> aside settings */
 aside {
     grid-row: 1 / span 2;
-    padding: 1rem;
+    padding: var(--padding-structural-el);
 }
 
 /* Grid Container ---> header settings */
 header {
     grid-column: 2;
-    padding: 1rem;
+    padding: var(--padding-structural-el);
     text-align: center;
 }
 
 /* Grid Container ---> main settings */
 main {
     grid-column: 2;
-    padding: 1rem;
+    padding: var(--padding-structural-el);
 }
