@@ -1,6 +1,8 @@
 /* ==== Root Variabels ==== */
 :root {
-
+    /* Spacing */
+    --grid-container-gap: 50px;
+    --margin-grid-container: 50px;
 }
 
 /* === Grid Container ==== */
@@ -9,6 +11,8 @@
     grid-template-columns: 200px 3fr;
     grid-template-rows: auto 1fr;
     height: 100vh;
+    gap: var(--grid-container-gap);
+    margin: var(--margin-grid-container);
 }
 
 /* Grid Container ---> aside settings */
