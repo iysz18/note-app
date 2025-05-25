@@ -8,9 +8,10 @@
     --border-radius-all: 8px;
 
     /* Coloring */
-    --bg-color-aside: #cccccc;
-    --bg-color-header: #e0e0e0;
-    --bg-color-main: #dddddd;
+    --border-color-structure-el: #f7e8d9;
+    --bg-color-structure-el: #F4F1EE;
+
+    /* Fonts and Sizing */
 }
 
 /* === Grid Container ==== */
@@ -23,22 +24,22 @@
     margin: var(--margin-grid-container);
 }
 
-/* Grid Container ---> all children */
-.grid-container * {
+/* Grid Container ---> all structure elements */
+aside, header, main {
+    background-color: var(--bg-color-structure-el);
     border-radius: var(--border-radius-all);
+    border: 3px solid var(--border-color-structure-el);
 }
 
 /* Grid Container ---> aside settings */
 aside {
     grid-row: 1 / span 2;
-    background-color: var(--bg-color-aside);
     padding: 1rem;
 }
 
 /* Grid Container ---> header settings */
 header {
     grid-column: 2;
-    background-color: var(--bg-color-header);
     padding: 1rem;
     text-align: center;
 }
@@ -46,6 +47,5 @@ header {
 /* Grid Container ---> main settings */
 main {
     grid-column: 2;
-    background-color: var(--bg-color-main);
     padding: 1rem;
 }
