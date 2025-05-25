@@ -11,19 +11,21 @@
     height: 100vh;
 }
 
-/* Grid Elements --- aside settings */
+/* Grid Container ---> aside settings */
 aside {
     grid-row: 1 / span 2;
     background-color: #ddd;
     padding: 1rem;
 }
 
+/* Grid Container ---> header settings */
 header {
     grid-column: 2;
     background-color: #f9f9f9;
     padding: 1rem;
 }
 
+/* Grid Container ---> main settings */
 main {
     grid-column: 2;
     background-color: #eee;
