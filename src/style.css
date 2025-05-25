@@ -1,0 +1,31 @@
+/* ==== Root Variabels ==== */
+:root {
+
+}
+
+/* === Grid Container ==== */
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 3fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+/* Grid Elements --- aside settings */
+aside {
+    grid-row: 1 / span 2;
+    background-color: #ddd;
+    padding: 1rem;
+}
+
+header {
+    grid-column: 2;
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+
+main {
+    grid-column: 2;
+    background-color: #eee;
+    padding: 1rem;
+}
