@@ -5,17 +5,4 @@ export class Note {
         this._date = date;
         this._priority = priority;
     }
-
-    // getters
-    get getTitle() {
-        return this._title;
-    }
-
-    get getContent() {
-        return this._content;
-    }
-
-    get getCurrentDate() {
-        return this._date;
-    }
 }
